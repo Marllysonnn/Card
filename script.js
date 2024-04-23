@@ -4,7 +4,7 @@ const into_data = document.querySelector('#into_data');
 const into_cvc = document.querySelector('#into_cvc');
 const butao = document.querySelector('#butao');
 
-
+// Fornece as informacoes digitadas nos inputs para a frente e verso do cartão.
 function entrada () {
     const numero = document.querySelector('#numero').value;
     const nome = document.querySelector('#nome').value;
@@ -20,11 +20,13 @@ function entrada () {
 
 const inputs = document.querySelectorAll('.input');
 
+//Restricao de apenas numeros a ser digitado no nos inputs que requer dados de numeros.
 inputs.forEach(function(input) {
     input.addEventListener('input', function() {
-        this.value = this.value.replace(/\D/g, ''); // Remove caracteres não numéricos
+        this.value = this.value.replace(/\D/g, '');
     });const numeroInput = document.querySelector('#numero');
 
+//Formatacao do input do numero do cartao, dando espacos a cada 4 digitos.
     numeroInput.addEventListener('input', function() {
         let unformattedValue = this.value.replace(/\s/g, '');
     
@@ -38,23 +40,14 @@ inputs.forEach(function(input) {
 const mesInput = document.querySelector('#mes');
 const anoInput = document.querySelector('#ano');
 
+//Prevencao de erros da mes, restringindo o digito maximo ate 12.
 mesInput.addEventListener('input', function() {
     let mes = parseInt(this.value, 10);
     
-    // Se o mês for maior que 12, ajusta para 12
     if (mes > 12) {
         this.value = '12';
-    } else if (mes < 1) { // Se o mês for menor que 1, ajusta para 01
+    } else if (mes < 1) {
         this.value = '01';
-    }
-});
-anoInput.addEventListener('input', function() {
-    let ano = parseInt(this.value, 20);
-
-    if (ano < 23) {
-        this.value = '24';
-    } else if (ano > 50) { // Se o mês for menor que 1, ajusta para 01
-        this.value = '32';
     }
 });
 
