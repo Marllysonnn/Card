@@ -1,0 +1,31 @@
+@import url('css/cartao.css');
+@import url('css/dados.css');
+@font-face {
+    font-family: 'Space_Grotesk';
+    src: url(font/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+html, 
+body{
+    width: 100%;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+
+    background-color: #fff;
+    background-image: url('img/bg-main-desktop.png');
+    background-repeat: no-repeat;
+    background-size: 25em;
+}
+h1, h2{
+    margin: 0;
+    font-family: 'Space_Grotesk';
+    font-weight: 100;
+    color: #fff;
+}
+.cartaos{
+    width: 50%;
+}
+.preencher{
+    width: 50%;
+}

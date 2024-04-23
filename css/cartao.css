@@ -1,0 +1,46 @@
+.cartaos{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    align-items: center;
+    justify-content: center;
+}
+#frente{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('/img/bg-card-front.png');
+}
+#verso{
+    margin-left: 8em;
+    background-image: url('/img/bg-card-back.png');
+}
+#frente, #verso{
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 25.1vh;
+    width: 19.84em;
+    border-radius: 0.5em;
+    padding: 1em;
+    box-shadow: 1em 1em 3em #00000050;
+}
+#frente .a{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#frente img{
+    width: 25%;
+    align-self: start;
+}
+#frente h1{
+    margin-top: 1.5em;
+    word-spacing: 0.5em;
+}
+#frente h2{
+    font-size: 0.9em;
+}
+#verso h2{
+    margin-top: 2.6em;
+    margin-left: 10.2em;
+}

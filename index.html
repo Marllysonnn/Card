@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cartão</title>
+</head>
+<body>
+        <section class="cartaos">
+            <div id="frente">
+                <img src="img/card-logo.svg" alt="">
+                <h1 id="into_numero">0000 0000 0000 0000</h1>
+                <div class="a">
+                    <h2 id="into_nome">NOME COMPLETO</h2>
+                    <h2 id="into_data">00/00</h2>
+                </div>
+            </div>
+            <div id="verso">
+                <h2 id="into_cvc">000</h2>
+            </div>
+        </section>
+        <section class="preencher">
+            <div id="dados">
+                <h2>NOME DO TITULAR</h2>
+                <input id="nome" type="text" placeholder="Ex.: Maria da S. P. Souza">
+                <h2>NÚMERO DO CARTÃO</h2>
+                <input pattern="\d{19}" maxlength="19" class="input" id="numero" type="text" placeholder="Ex.: 0123 4567 8900">
+                <div id="datas">
+                    <div>
+                        <h2>DATA DE VALID. (MM/AA)</h2>
+                        <input class="input" pattern="\d{2}" maxlength="2" id="mes" type="tex" placeholder="Ex.: 05">
+                        <input class="input" pattern="\d{2}" maxlength="2" id="ano" type="text" placeholder="Ex.: 95">
+                    </div>
+                    <div>
+                        <h2 >CVC</h2>
+                        <input class="input" pattern="\d{3}" maxlength="3" id="cvc" type="text" placeholder="Ex.: 000">
+                    </div>
+                </div>
+                <button id="butao">Confirmar</button>
+            </div>
+        </section>
+        <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+#dados{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 12em 0em 0em;
+}
+#dados h2{
+    margin-bottom: 0.5em;
+    grid-column: span 2;
+    font-size: 0.7em;
+    letter-spacing: 0.15em;
+    font-weight: 900;
+    color: #000;
+}
+#dados input{
+    width: 100%;
+    height: 2em;
+    border-radius: 0.4em;
+    border: 0.1em solid #dadada;
+    margin-bottom: 2em;
+    padding-left: 1em;
+}
+#dados input:focus{
+    padding-left: 1em;
+    border: 0.1em solid #a0a0a0;
+    outline: none;
+}
+#cvc{
+    grid-column: span 2;
+}
+#datas{
+    display: flex;
+    gap: 1.5em;
+}
+#datas div{
+    width: 50%;
+    column-gap: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+button{
+    font-size: 0.8em;
+    font-weight: 200;
+    color: #fff;
+    border: none;
+    padding: 1em;
+    border-radius: 0.5em;
+    background-color: hsl(278, 68%, 11%);
+    cursor: pointer;
+}
